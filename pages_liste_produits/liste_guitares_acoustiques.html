@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liste de nos produits - GuitHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="/css/entete_v2-css.css">
+  <link rel="stylesheet" href="/css/menu-css.css">
+  <link rel="stylesheet" href="/css/Nos_categories.css">
+  <link rel="stylesheet" href="/css/liste_produits.css">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/fil_ariane.css">
+  <link rel="stylesheet" href="/css/footer-css_v2.css">
+
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Demande au robot de Google de ne pas archiver le site, 
+  qui pourrait au moment de l'archivage contenir une erreur (prix...).-->
+  <meta name="googlebot" content="noarchive">
+</head>
+
+<body onLoad="currentSlide(1)">
+    <header>
+        <div class="container-entete">
+          <div class="upper-zone">
+            <div class="upper-zone-content">
+              <div class="zone-1-upper">
+                <a href="/nouscontacter.html">Nous contacter</a>
+                <a href="/a_propos.html">A propos</a>
+              </div>
+              <div class="zone-1-lower">
+                <button id="button-open" class="style-button-open">
+                  <img src="/ressources_entete/bx-menu.svg" alt="menu">
+                </button>
+                <div class="container-menu" id="to-close-menu">
+                  <div class="container-menu-div">
+                    <div class="h3-close-menu">
+                      <h3>Menu</h3>
+                      <button id="button-close" class="style-button-close"><img
+                          src="/ressources_entete/bx-x-36px.svg" alt="close-icon"></button>
+                      <!-- <input type="checkbox" name="check-close" id="close" onclick="close()"> -->
+                    </div>
+                    <div class="separator"></div>
+                    <div class="bloc-menu">
+                      <div class="choix-menu">
+                        <ul class="liste-menu">
+                          <li><a href="/pages_liste_produits/liste_produits_1.html">Tous nos produits</a></li>
+                          <li><a href="/pages_liste_produits/liste_guitares_acoustiques.html">Guitare Acoustique</a></li>
+                          <li><a href="/pages_liste_produits/liste_guitares_electriques.html">Guitare Electrique</a></li>
+                          <li><a href="/pages_liste_produits/liste_basses.html">Basse</a></li>
+                          <li><a href="/pages_liste_produits/liste_amplis.html">Ampli</a></li>
+                          <li><a href="/pages_liste_produits/liste_effets.html">Effets</a></li>
+                          <li><a href="/pages_liste_produits/liste_accessoires.html">Accessoires</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h3>Services</h3>
+                    <div class="separator"></div>
+                    <div class="bloc-menu">
+                      <div class="choix-menu">
+                        <ul class="liste-menu">
+                          <li><a href="/nouscontacter.html">Nous contacter</a></li>
+                          <li><a href="#">Questions fréquentes</a></li>
+                          <li><a href="#">Frais de port et de livraison</a></li>
+                          <li><a href="#">Retourner un produit</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h3>A propos</h3>
+                    <div class="separator"></div>
+                    <div class="bloc-menu">
+                      <div class="choix-menu">
+                        <ul class="liste-menu">
+                          <li><a href="/a_propos.html">Informations Guithub</a></li>
+                          <li><a href="#">Conditions générales</a></li>
+                          <li><a href="#">L'univers Guithub</a></li>
+                          <li><a href="#">Tuto make-up</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="/index.html#nouveautes" class="link-zone-1-lower">Nouveautés</a>
+                <a href="/index.html#best_sellers" class="link-zone-1-lower">Best-seller</a>
+              </div>
+              <div class="zone-2">
+                <div class="zone-2-upper">
+                  <div class="bloc-image-entete">
+                    <a href="/index.html">
+                      <img src="/images/logo_guit_hub_long.png" alt="" class="img-logo">
+                    </a>
+                  </div>
+                </div>
+                <div class="zone-2-lower">
+                  <form action="" class="champ-recherche">
+                    <button type="submit"><i class='bx bx-search'></i></button>
+                    <input type="text" class="barre-recherche" placeholder="Rechercher">
+                  </form>
+                </div>
+              </div>
+              <div class="zone-3-upper">
+                <a href="#">Politique de retour</a>
+                <a href="#">TVA réduite</a>
+              </div>
+              <div class="zone-3-lower">
+                <div class="img-entete">
+                  <a href="#"><img src="/ressources_entete/bxs-flag-alt.svg" alt="langue"></a>
+                </div>
+                <div class="img-entete">
+                  <a href="#"><img src="/ressources_entete/bx-user-circle.svg" alt="langue"></a>
+                </div>
+                <div class="img-entete">
+                  <a href="#"><img src="/ressources_entete/bx-cart.svg" alt="langue"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-zone">
+            <nav class="menu-nav">
+              <ol class="list-nav">
+                <a class="categorie_nav" href="/pages_liste_produits/liste_produits_1.html">
+                  <li>Tous nos produits</li>
+                </a>
+                <a class="categorie_nav" href="/pages_liste_produits/liste_guitares_acoustiques.html">
+                  <li>Guitares Acoustiques</li>
+                </a>
+                <a class="categorie_nav" href="/pages_liste_produits/liste_guitares_electriques.html">
+                  <li>Guitares Electriques</li>
+                </a>
+                <a class="categorie_nav" href="/pages_liste_produits/liste_basses.html">
+                  <li>Basses</li>
+                </a>
+                <a class="categorie_nav" href="/pages_liste_produits/liste_amplis.html">
+                  <li>Amplis</li>
+                </a>
+                <a class="categorie_nav" href="/pages_liste_produits/liste_effets.html">
+                  <li>Effets</li>
+                </a>
+                <a class="categorie_nav" href="/pages_liste_produits/liste_accessoires.html">
+                  <li>Accessoires</li>
+                </a>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </header>
+    <div class="fil_ariane">
+        <div>
+            <a href="/index.html" alt="Accueil"> &#8962;</a>
+        </div>
+        <div>
+            <a href="/pages_liste_produits/liste_guitares_acoustiques.html" alt="Amplis">Guitares Acoustiques</a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h1>Nos Guitares Acoustiques</h1>
+    <br>
+    <br>
+    <h3 class="titre_gauche">Gibson - HummingBird</h3>
+    <section class="gauche">
+        <a href="" class="aligner_voirplus">
+            <p>Version moderne de l'Hummingbird originelle, la GIBSON Modern Hummingbird Standard (MCSSHBVS) est une
+                guitare folk électro de type Dreadnought sublimée par une lutherie massive traditionnelle au meilleur
+                sens du terme (table Epicéa Sitka, dos/éclisses/manche Acajou et touche en Palissandre indien).
+                Pré-amplification LR Baggs VTC intégrée (mollettes volume/tonalité dans la rosace) .</p><br> 
+        </a>
+        <span class="prix">3 769€</span>
+        <a href="">
+            <img src="/images/prduits_en_vente/Gibson_hummingbird.png"
+                alt="photo de la Charvel - Joe Duplantier Signature" class="photo_produits_gauche">
+        </a>
+    </section>
+    <h3 class="titre_droite">Ibanez - Alt30</h3>
+    <section class="droite">
+        <a href="/pages_produits/Ibanez-Altstar-guitare-electro-acoustique-ALT30FM.html">
+            <img src="/images/prduits_en_vente/ibanez_alt30.png" alt="photo de l'Ibanez Alt30"
+                class="photo_produits_droite">
+        </a>
+        <a href="/pages_produits/Ibanez-Altstar-guitare-electro-acoustique-ALT30FM.html" class="aligner_voirplus">
+            <p>
+                Faisant partie de la nouvelle série Ibanez Altstar, la guitare électro-acoustique ALT30FM combine
+                l'apparence et la sensation d'une guitare électrique avec celles d'une guitare acoustique à caisse
+                plate.
+                En plus d'un manche Comfort Grip confortable, ce modèle abordable présente une tête classique à six
+                mécaniques alignées du même côté, des incrustations de repères de position Altstar spécialement conçues,
+                et les chevilles de pont Advantage auto-développées par Ibanez.</p><br> 
+        </a>
+        <span class="prix">419€</span>
+    </section>
+    <h3 class="titre_gauche">LAG LGTHV30ACE</h3>
+    <section class="gauche">
+        <a class="aligner_voirplus" href="">
+            <p>Avec la Tramontane HyVibe 10, Lag lance la toute première « guitare intelligente ». Cette guitare
+                électro-acoustique peut s'auto-amplifier, générer ses propres effets, servir de looper et fonctionner
+                comme une enceinte Bluetooth ! Toute cette magie se produit avant même que vous ne la branchiez sur un
+                ampli ou une pédale</p><br> 
+        </a>
+        <span class="prix">1 399€</span>
+        <a href="">
+            <img src="/images/prduits_en_vente/LAG.png" alt="Photo de la guitare acoustique LAG"
+                class="photo_produits_gauche">
+        </a>
+    </section>
+
+    <h3 class="titre_droite">Ovation Pro Series Elite 1868TX-5-G</h3>
+    <section class="droite">
+        <a href="">
+            <img src="/images/prduits_en_vente/Ovation.jpg" alt=""
+            class="photo_produits_droite"> 
+        </a>
+        <a href="" class="aligner_voirplus">
+            <p> Maintenue à un prix abordable, cette guitare électro-acoustique au look contemporain et facile à jouer est entièrement conçue pour la scène. Elle est dotée d'un dos rond spécial fabriqué à partir d'un matériau synthétique sombre, qui, combiné avec la table d'harmonie en épicéa de Sitka massif et le design à plusieurs ouvertures sonores, produit un son clair aussi puissant et robuste que la construction qui contribue à le façonner.</p><br>
+        </a>
+        <span class="prix">799€</span>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-upper-container">
+            <div class="footer-upper-container-with-margin">
+                <div class="footer-autopromo">
+                    <div class="option-paiement">
+                        <h4>Achetez et payez en toute sécurité</h4>
+                        <div class="icon-paiement">
+                            <div class="payment-icon">
+                                <img src="/ressources_footer/binance-svgrepo-com.svg" alt="Binance" class="icon-footer">
+                            </div>
+                            <div class="payment-icon">
+                                <img src="/ressources_footer/paypal-v2-svgrepo-com.svg" alt="Paypal" class="icon-footer">
+                            </div>
+                            <div class="payment-icon">
+                                <img src="/ressources_footer/jagex-svgrepo-com.svg" alt="Jagex" class="icon-footer">
+                            </div>
+                            <div class="payment-icon">
+                                <img src="/ressources_footer/nexo-svgrepo-com.svg" alt="Nexo" class="icon-footer">
+                            </div>
+                            <div class="payment-icon">
+                                <img src="/ressources_footer/wyze-svgrepo-com.svg" alt="Notabug" class="icon-footer">
+                            </div>
+                            <div class="payment-icon">
+                                <img src="/ressources_footer/firefly-iii-svgrepo-com.svg" alt="Firefly" class="icon-footer">
+                            </div>
+                            <div class="payment-icon">
+                                <img src="/ressources_footer/discord-v2-svgrepo-com.svg" alt="Discord" class="icon-footer">
+                            </div>
+    
+                        </div>
+                        <p class="option-paiement-conclusion">
+                            Crache la monnaie, mon gars ! Tu peux dépenser comme tu le veux !
+                        </p>
+                    </div>
+                    <div class="avantages">
+                        <h4>Vos avantages</h4>
+                        <ul>
+                            <li class="li-display">Garantie Guithub 3 an</li>
+                            <li>Garantie 30 jours satisfait ou remboursé</li>
+                            <li>Service de réparation</li>
+                            <li>Conseils d'experts en la matière</li>
+                            <li>Garantie satisfait ou remboursé</li>
+                            <li>Le plus grand stock d'Europe</li>
+                        </ul>
+                    </div>
+                    <div class="services">
+                        <h4>Nos services</h4>
+                        <ul>
+                            <li>Frais de port et délais de livraison</li>
+                            <li>Centre de service</li>
+                            <li>Bons d'achat</li>
+                            <li>Vente en magasin</li>
+                            <li>Aperçu du service</li>
+                            <li>Nous contacter</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        <div class="footer-lower-container">
+            <div class="footer-lower-with-margins">
+                <div class="footer-lower-left-right">
+                    <div class="footer-lower-left--">
+                        <ul>
+                            <li><a href="#">CGV / Infos légales</a></li>
+                            <li><a href="#">Politique de confidentialité</a></li>
+                            <li><a href="#">Paramètres de confidentialité</a></li>
+                            <li><a href="#">Droit de rétractation du consommateur</a></li>
+                            <li><a href="#">Processus de commande</a></li>
+                            <li><a href="#">Garantie légale de conformité</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-lower-right--">
+                        <div class="reseaux-sociaux">
+                            <div class="rs-row-1">
+                                <a href="#">
+                                    <div class="icon-rs"><img src="/ressources_footer/instagram-svgrepo-com.svg" alt="Insta"></div>
+                                </a>
+                                <a href="#">
+                                    <div class="icon-rs"><img src="/ressources_footer/pinterest-v2-svgrepo-com.svg" alt="Pinterest"></div>
+                                </a>
+                                <a href="#">
+                                    <div class="icon-rs"><img src="/ressources_footer/facebook-v2-svgrepo-com.svg" alt="Facebook"></div>
+                                </a>
+                            </div>
+                            <div class="rs-row-2">
+                                <a href="#">
+                                    <div class="icon-rs"><img src="/ressources_footer/rockstar-games-svgrepo-com.svg" alt="Rockstar"></div>
+                                </a>
+                                <a href="#">
+                                    <div class="icon-rs"><img src="/ressources_footer/tesla-svgrepo-com.svg" alt="Tesla"></div>
+                                </a>
+                                <a href="#">
+                                    <div class="icon-rs"><img src="/ressources_footer/sync-svgrepo-com.svg" alt="sync">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <ul>
+                            <li><a href="#">A propos</a></li>
+                            <li><a href="#">Carrières et recrutement</a></li>
+                            <li><a href="#">Petites annonces</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+    
+                    </div>
+                    <div class="copyright">
+                        <div class="stores">
+                            <div class="store">
+                                <a href="#"><img src="/ressources_footer/apple_store_icon.svg" alt=""></a>
+                            </div>
+                            <div class="store">
+                                <a href="#"><img src="/ressources_footer/play_store_icon.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="formulaire-newsletter">
+                            <form action="" method="post">
+                                <label for="newsletter" class="label-newsletter">Recevoir la newsletter : </label>
+                                    <input type="text" name="champ-mail" id="newsletter" 
+                                        placeholder="  jean.bonbeurre@email.com" class="input-newsletter">
+                                    <button id="Envoyer" class="button-meilleurs-ventes">Inscrivez-moi !</button>
+                            </form>
+                        </div>
+                        <div class="conclusion">
+                            <span>© OG Guithub content</span>
+                            <span>Le HTML et CSS, c'est fantastique !</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    </footer>
+    <script src="/js/scriptClose.js"></script>
+</body>
+</html>
