@@ -1,0 +1,173 @@
+h1{
+    font-family: 'Shadows Into Light', cursive;
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+}
+.guithub_crew{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    margin-bottom: 10vw;
+}
+
+.photo_luthier{
+    max-height: 12vw;
+    margin: 2vw;
+    position: relative;
+    bottom: 1.5vw;
+}
+
+.photo_cariste{
+    max-width: 12vw;
+    position: relative;
+    top: 1vw;
+}
+
+.photo_manutentionnaire{
+    max-width: 12vw;
+    position: relative;
+    top: 1vw;
+}
+
+.photo_commerciale{
+    max-height: 12vw;
+    margin: 0.8vw;
+
+}
+
+.photo_cariste, .photo_commerciale, .photo_luthier, .photo_manutentionnaire{
+    border: 5px rgb(131, 140, 255) solid;
+    border-radius: 100%;
+    margin-bottom: 2vw;
+}
+
+.crew{
+    display: flex;
+    justify-content: center;
+    margin: 8vw;
+    font-size: 1.5em;
+}
+
+.photo_meeting{
+    border-right: 5px rgb(131, 140, 255) solid;
+    border-top: 5px rgb(131, 140, 255) solid;
+    border-bottom: 5px rgb(131, 140, 255) solid;
+    border-radius: 100%;
+    max-width: 25vw;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    margin-bottom: 2vw;
+}
+
+.historique{
+    /* padding: 3vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    max-width: 35vw;
+    max-height: 12vw;
+    overflow: scroll;
+    overflow-x: hidden;
+    border: 5px solid rgb(131, 140, 255);
+    border-radius: 5%;
+
+}
+.timeline_box > h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2vw
+}
+
+.titre-histoire-GuitHub{
+   font-size: 1.5em;
+  
+}
+.timeline_box{
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    bottom: 3vw;
+
+}
+.titre_droite{
+    padding-bottom: 3vw;
+    font-size: 1.5em;
+}
+
+.jean{
+    position: relative;
+    bottom: 1.8vw;
+}
+
+.michael{
+    position: relative;
+    bottom: 0.5vw;
+}
+
+@media screen and (max-width:1240px){
+.jacques,
+.patrick,
+.michael,
+.jean {
+        text-align: center;
+        text-justify: auto;
+    }
+    
+}
+
+@media screen and (max-width:1024px){
+    .guithub_crew{
+        grid-template-columns: 1fr;
+        gap: 3vw;
+        text-align: center;
+
+    }
+    .photo_luthier, 
+    .photo_cariste, 
+    .photo_manutentionnaire, 
+    .photo_commerciale {
+        max-height: auto; 
+       
+    }
+
+}
+@media screen and (max-width:1080px){
+    .aligner_voirplus{
+        max-width: 100vw;
+        padding: 2vw;
+    }
+    .titre-histoire-GuitHub{
+        margin-bottom: 7vw;
+        justify-content: center;
+        margin-left: 2vw;
+        
+    }
+
+}
+@media screen and (max-width:1024px ){
+    .titre-histoire-GuitHub{
+        margin-bottom: 7vw;
+        text-align: center;
+    }
+   
+}
+@media screen and (max-width:500px ){
+    .historique{
+        max-width: 77vw;
+        max-height: 30vw;
+    }
+    h1{
+
+    }
+   
+}
+
+
